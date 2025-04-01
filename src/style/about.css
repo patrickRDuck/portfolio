@@ -1,0 +1,155 @@
+main {
+    padding: 5% 14%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 6.5vh;
+}
+
+main div#about-me {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    background-color: #444343;
+
+    border-radius: 30px;
+    border: 1px solid #848686;
+
+    padding: 5%;
+}
+
+main div#about-me strong {
+    position: relative;
+
+    width: fit-content;
+
+    font-size: 18px;
+    color: #fffefe;
+    -webkit-text-stroke: .3px #848686;
+    letter-spacing: 4px;
+}
+
+main div#about-me strong::after {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 105%;
+
+    height: 1.3px;
+    width: clamp(100px, 15vw,200px);
+
+    background-color: #FFC351;
+
+    border-radius: 1px;
+}
+
+main div#about-me > div:last-child {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 5%;
+}
+
+main div#about-me > div:last-child  div#profile-photo-about {
+    height: 300px;
+    width: 300px;
+    
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    border: .1px solid #FFC351;
+}
+
+main div#about-me > div:last-child  div#profile-photo-about img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main div#about-me > div:last-child p {
+    margin-top: 3%;
+    width: 60%;
+
+    text-align: justify;
+    line-height: 1.4;
+}
+
+main div#skills {
+    padding-inline: 3%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+main div#skills > strong::before {
+    content: "";
+
+    display: inline-flex;
+
+    height: 1px;
+    width: 100px;
+
+    background-color: #FFC351;
+
+    border-radius: 1px;
+}
+
+main div#skills > strong {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+    width: fit-content;
+
+    font-size: 18px;
+    text-align: right;
+    letter-spacing: 5px;
+    -webkit-text-stroke: .3px #848686;
+}
+
+main div#skills div#grid-skills {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 30px;
+    column-gap: 20px;
+}
+
+main div#skills div#grid-skills div.box-skill {
+    padding: 2% 5%;
+    width: 200px;
+    height: 65px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+
+    border: 1px solid #848686;
+    border-radius: 10px;
+
+    transition: all 250ms ease-in;
+}
+
+main div#skills div#grid-skills div.box-skill:hover {
+    background-color: #444343;
+}
+
+main div#skills div#grid-skills div.box-skill img {
+    height: 30px;
+    width: 30px;
+    transition: all 250ms ease-in;
+}
+
+main div#skills div#grid-skills div.box-skill:hover img {
+    transform: scale(1.1);
+}
+
+main div#skills div#grid-skills div.box-skill strong {
+    font-size: 16px;
+    letter-spacing: 3px;
+}
