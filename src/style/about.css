@@ -129,14 +129,14 @@ main div#skills div#grid-skills div.box-skill {
     gap: 20px;
     align-items: center;
 
-    border: 1px solid #848686;
+    border: .5px solid rgba(255, 195, 81, .55);
     border-radius: 10px;
 
     transition: all 250ms ease-in;
 }
 
 main div#skills div#grid-skills div.box-skill:hover {
-    background-color: #444343;
+    background-color: rgba(255, 195, 81, .05);
 }
 
 main div#skills div#grid-skills div.box-skill img {
