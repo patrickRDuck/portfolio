@@ -99,3 +99,15 @@ main div#profile-photo img {
     height: 100%;
     object-fit: cover;
 }
+
+@media (max-width: 800px) {
+    main {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    main div#profile-photo {
+        height: 250px;
+        width: 250px;
+    }
+}
