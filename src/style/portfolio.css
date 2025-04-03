@@ -1,0 +1,28 @@
+main {
+    padding: 5% 14%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 6.5vh;
+}
+
+main > div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+    text-align: center;
+}
+
+main > div:first-child strong {
+    font-size: 22px;
+    letter-spacing: 6px;
+    -webkit-text-stroke: .5px #848686;
+}
+
+main > div:first-child p {
+    font-size: 18px;
+    color: #a8a7a7;
+    letter-spacing: 3px;
+}
