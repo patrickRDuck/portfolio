@@ -103,3 +103,19 @@ main div#projects-grid div.project-box div#project-description p {
     line-height: 1.3;
     font-size: 13px;
 }
+
+@media (min-width:750px) and (max-width: 1150px) {
+    main div#projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 749px) {
+    main div#projects-grid {
+        grid-template-columns: repeat(1, auto);
+    }
+
+    main div#projects-grid > :nth-child(even) {
+        justify-self: end;
+    }
+}
