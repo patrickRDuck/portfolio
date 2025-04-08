@@ -1,6 +1,8 @@
 const header = document.querySelector('header')
 
 function responsiveHeader() {
+    const baseUrl = `${window.location.origin}/${window.location.pathname.split("/")[1]}/`
+
     if(window.innerWidth < 600) {
         header.classList.add("responsive")
 
@@ -28,9 +30,9 @@ function responsiveHeader() {
             </strong>
 
             <nav>
-                <a href="/index.html">Home</a>
-                <a href="/src/pages/about.html">About</a>
-                <a href="/src/pages/portfolio.html">Portfolio</a>
+                <a href="${baseUrl}index.html">Home</a>
+                <a href="${baseUrl}src/pages/about.html">About</a>
+                <a href="${baseUrl}src/pages/portfolio.html">Portfolio</a>
             </nav>
 
             <a href="https://github.com/patrickRDuck" target="_blank">
